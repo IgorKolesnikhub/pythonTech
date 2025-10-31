@@ -1,30 +1,14 @@
-#Задание 1
-pets = {}
+# задание 2
 
-#Вводим данные о питомце
-name = input("Введите имя питомца: ")
-species = input("Введите вид питомца: ")
-age = int(input("Введите возраст питомца: "))
-owner = input("Введите имя владельца: ")
+def factorial(n: int) -> int:
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
 
-#Поправляем грамматику
-if age % 10 == 1 and age % 100 != 11:
-    vozrast = "год"
-elif age % 10 in [2, 3, 4] and not (age % 100 in [12, 13, 14]):
-    vozrast = "года"
-else:
-    vozrast = "лет"
-    
-#Создаем внутренний словарь с информацией о питомце
-pet_info = {
-    'Вид питомца': species,
-    'Возраст питомца': f"{age}, {vozrast}",
-    'Имя владельца': owner
-}
+n = int(input("Введите число: "))
+factorial_n = factorial(n)
+factorials_list = [factorial(i) for i in range(factorial_n, 0, -1)]
 
-#Добавляем в основной словарь pets
-pets[name] = pet_info
-
-#Результат для проверки
-print("Созданный словарь pets:")
-print(pets)
+print("Факториал числа", n, "=", factorial_n)
+print("Список факториалов:", factorials_list)

@@ -1,3 +1,4 @@
+# задание 1
 a,b = map(float,input().split())
 
 perimetr = 2 * (a + b)

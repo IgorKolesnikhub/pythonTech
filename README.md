@@ -1,0 +1,2 @@
+# pythonTech
+стек технологий Python

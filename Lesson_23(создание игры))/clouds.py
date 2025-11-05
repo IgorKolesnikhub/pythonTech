@@ -2,7 +2,7 @@ from utils import randbool
 
 # 0 - ничего нет
 # 1 - обычное облако
-# 2 - грозовое облако
+# 2 - грозовое облак
 
 class Clouds:
     def __init__(self, w, h):
